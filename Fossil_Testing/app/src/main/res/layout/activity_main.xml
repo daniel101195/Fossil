@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Input display name here"
+        />
+
+    <Button
+        android:id="@+id/button_listuserbookmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List Bookmark user" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/item_progress_bar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:elevation="@dimen/padding_5"
+        android:padding="@dimen/padding_5"
+        android:visibility="gone" />
+</LinearLayout>
